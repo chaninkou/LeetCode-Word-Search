@@ -42,12 +42,13 @@ public class CheckWordSearchMatrixFunction {
 	        // i - 1 check the ceil above
 	        // j + 1 check the ceil to the right
 	        // j - 1 check the ceil to the left
+	        // If one of them return true, this variable will become true right away
 	        boolean found = dfs(board, i + 1, j, count + 1, word) 
 	            || dfs(board, i - 1, j, count + 1, word)  
 	            || dfs(board, i, j + 1, count + 1, word) 
 	            || dfs(board, i, j - 1, count + 1, word);
 	        
-	        // Put the used value back in the grid instead of empty string
+	        // When we only found part of the words, replace the empty space with the original char
 	        board[i][j] = temp;
 	        
 	        return found;
