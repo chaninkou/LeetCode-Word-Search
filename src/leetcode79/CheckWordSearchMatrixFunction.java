@@ -1,4 +1,4 @@
-package matrixWordSearch;
+package leetcode79;
 
 public class CheckWordSearchMatrixFunction {
 	public boolean exist(char[][] board, String word) {

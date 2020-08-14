@@ -1,4 +1,4 @@
-package matrixWordSearch;
+package leetcode79;
 
 import java.util.Arrays;
 
@@ -8,7 +8,7 @@ public class Main {
 				          {'S','F','C','S'} ,
 				          {'A','D','E','E'}};
 		
-		String word = "SEE";
+		String word = "SEEC";
 		
 		System.out.println("Board: " + Arrays.deepToString(board));
 		
