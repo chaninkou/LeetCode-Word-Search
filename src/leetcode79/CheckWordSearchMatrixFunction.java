@@ -26,7 +26,7 @@ public class CheckWordSearchMatrixFunction {
 			return true;
 		}
 
-		// Normal checking for dfs
+		// Once current word does not match, false
 		if (i < 0 || i >= board.length || j < 0 || j >= board[i].length || board[i][j] != word.charAt(count)) {
 			return false;
 		}
