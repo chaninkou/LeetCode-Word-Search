@@ -31,9 +31,10 @@ public class CheckWordSearchMatrixFunction {
 			return false;
 		}
 
+		// Temp
 		char temp = board[i][j];
 		
-		// Mark as visited
+		// Mark as visited 
 		board[i][j] = ' ';
 
 		// i + 1 check the cell below
